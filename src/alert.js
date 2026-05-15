@@ -1,9 +1,11 @@
 import nodemailer from 'nodemailer';
 
-const THRESHOLD = Number(process.env.PRICE_THRESHOLD_USD ?? 1500);
+const THRESHOLD_MSP = Number(process.env.PRICE_THRESHOLD_MSP_USD ?? 1400);
+const THRESHOLD_ORD = Number(process.env.PRICE_THRESHOLD_ORD_USD ?? 1100);
 
 export async function maybeAlert(route, result) {
-  if (result.price_per_person_usd > THRESHOLD) return false;
+  const threshold = route === 'KTM-MSP' ? THRESHOLD_MSP : THRESHOLD_ORD;
+  if (result.price_per_person_usd > threshold) return false;
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',

@@ -32,7 +32,8 @@ jobs:
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
-          PRICE_THRESHOLD_USD: ${{ secrets.PRICE_THRESHOLD_USD }}
+          PRICE_THRESHOLD_MSP_USD: ${{ secrets.PRICE_THRESHOLD_MSP_USD }}
+          PRICE_THRESHOLD_ORD_USD: ${{ secrets.PRICE_THRESHOLD_ORD_USD }}
         run: node src/checker.js
 
       - name: Commit updated history
