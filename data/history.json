@@ -42,5 +42,16 @@
     "max_layover_hours": 3.5,
     "alert_sent": true,
     "confidence": "medium"
+  },
+  {
+    "checked_at": "2026-05-15T15:40:24.300Z",
+    "route": "KTM-ORD",
+    "price_per_person": 1871,
+    "total_for_2": 3742,
+    "airline": "Turkish Airlines",
+    "stops": 1,
+    "max_layover_hours": 1.3,
+    "alert_sent": false,
+    "confidence": "high"
   }
 ]
