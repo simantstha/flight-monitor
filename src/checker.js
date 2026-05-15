@@ -12,6 +12,7 @@ const ROUTES = [
 function buildPrompt(dest) {
   return `Search Google Flights, Kayak, Skyscanner, and Qatar Airways directly for the cheapest available round-trip economy flights from Kathmandu (KTM) to ${dest} for 2 passengers. Outbound: any date in June 2026. Return: any date in September 2026.
 CRITICAL REQUIREMENT: maximum 1 layover each way, prefer layovers under 4 hours. These are elderly passengers who cannot handle long connections.
+You MUST provide specific travel dates (e.g. "June 14, 2026"), not just month names.
 You MUST find and include the actual URL where this fare can be booked or viewed — a direct link to Google Flights, Kayak, Skyscanner, or the airline site showing this itinerary. Do not return a generic homepage.
 Return ONLY a JSON object with these exact fields, no other text:
 {
@@ -20,8 +21,8 @@ Return ONLY a JSON object with these exact fields, no other text:
   "airline": string,
   "outbound_route": string,
   "return_route": string,
-  "outbound_dates": string,
-  "return_dates": string,
+  "outbound_dates": string (specific date e.g. "June 14, 2026"),
+  "return_dates": string (specific date e.g. "September 5, 2026"),
   "max_layover_hours": number,
   "stops": number,
   "source": string,
