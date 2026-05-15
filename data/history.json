@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "checked_at": "2026-05-15T02:34:11.396Z",
+    "route": "KTM-MSP",
+    "price_per_person": 1200,
+    "total_for_2": 2400,
+    "airline": "Qatar Airways",
+    "stops": 1,
+    "max_layover_hours": 3.5,
+    "alert_sent": true,
+    "confidence": "low"
+  },
+  {
+    "checked_at": "2026-05-15T02:34:26.125Z",
+    "route": "KTM-ORD",
+    "price_per_person": 753,
+    "total_for_2": 1506,
+    "airline": "Cathay Pacific",
+    "stops": 1,
+    "max_layover_hours": 3.7,
+    "alert_sent": true,
+    "confidence": "medium"
+  }
+]
