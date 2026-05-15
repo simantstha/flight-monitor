@@ -1,0 +1,14 @@
+{
+  "name": "flight-monitor",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "KTM flight price monitor with Anthropic web search",
+  "main": "src/checker.js",
+  "scripts": {
+    "start": "node src/checker.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "nodemailer": "^8.0.7"
+  }
+}
