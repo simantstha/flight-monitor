@@ -20,5 +20,27 @@
     "max_layover_hours": 3.7,
     "alert_sent": true,
     "confidence": "medium"
+  },
+  {
+    "checked_at": "2026-05-15T02:39:14.883Z",
+    "route": "KTM-MSP",
+    "price_per_person": "Unable to determine",
+    "total_for_2": "Unable to determine",
+    "airline": "Unable to determine",
+    "stops": "Unable to determine",
+    "max_layover_hours": "Unable to determine",
+    "alert_sent": true,
+    "confidence": "low"
+  },
+  {
+    "checked_at": "2026-05-15T02:39:36.378Z",
+    "route": "KTM-ORD",
+    "price_per_person": 635,
+    "total_for_2": 1270,
+    "airline": "Turkish Airlines",
+    "stops": 1,
+    "max_layover_hours": 3.5,
+    "alert_sent": true,
+    "confidence": "medium"
   }
 ]
