@@ -10,8 +10,9 @@ const ROUTES = [
 ];
 
 function buildPrompt(dest) {
-  return `Search Google Flights and travel sites for the cheapest available round-trip economy flights from Kathmandu KTM to ${dest} for 2 passengers. Outbound: any date in June 2026. Return: any date in September 2026.
-CRITICAL REQUIREMENT: maximum 1 layover each way, prefer itineraries with shorter layover durations (under 4 hours). These are elderly passengers who cannot handle long connections.
+  return `Search Google Flights, Kayak, Skyscanner, and Qatar Airways directly for the cheapest available round-trip economy flights from Kathmandu (KTM) to ${dest} for 2 passengers. Outbound: any date in June 2026. Return: any date in September 2026.
+CRITICAL REQUIREMENT: maximum 1 layover each way, prefer layovers under 4 hours. These are elderly passengers who cannot handle long connections.
+You MUST find and include the actual URL where this fare can be booked or viewed — a direct link to Google Flights, Kayak, Skyscanner, or the airline site showing this itinerary. Do not return a generic homepage.
 Return ONLY a JSON object with these exact fields, no other text:
 {
   "price_per_person_usd": number,
@@ -24,6 +25,7 @@ Return ONLY a JSON object with these exact fields, no other text:
   "max_layover_hours": number,
   "stops": number,
   "source": string,
+  "booking_url": string,
   "confidence": "high" | "medium" | "low"
 }`;
 }

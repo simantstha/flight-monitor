@@ -33,6 +33,7 @@ export async function maybeAlert(route, result) {
         <tr><td><b>Source</b></td><td>${result.source}</td></tr>
         <tr><td><b>Confidence</b></td><td>${result.confidence}</td></tr>
       </table>
+      ${result.booking_url ? `<p style="margin-top:16px"><a href="${result.booking_url}" style="background:#1a73e8;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:bold;font-family:sans-serif">Book this flight →</a></p>` : ''}
     `,
   });
 
